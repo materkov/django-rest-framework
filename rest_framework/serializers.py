@@ -20,7 +20,7 @@ from django.core.paginator import Page
 from django.db import models
 from django.forms import widgets
 #from django.utils.datastructures import SortedDict
-from collections import OrderedDict as SortedDict
+from rest_framework.sorteddict import SortedDict
 from rest_framework.compat import get_concrete_model, six
 from rest_framework.settings import api_settings
 
