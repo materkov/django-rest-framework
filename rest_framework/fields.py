@@ -20,7 +20,8 @@ from django.http import QueryDict
 from django.forms import widgets
 from django.utils.encoding import is_protected_type
 from django.utils.translation import ugettext_lazy as _
-from django.utils.datastructures import SortedDict
+#from django.utils.datastructures import SortedDict
+from rest_framework.sorteddict import SortedDict
 from rest_framework import ISO_8601
 from rest_framework.compat import (
     timezone, parse_date, parse_datetime, parse_time, BytesIO, six, smart_text,
