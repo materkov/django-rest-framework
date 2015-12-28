@@ -75,7 +75,8 @@ class Response(SimpleTemplateResponse):
         """
         # TODO: Deprecate and use a template tag instead
         # TODO: Status code text for RFC 6585 status codes
-        return STATUS_CODE_TEXT.get(self.status_code, '')
+        #return STATUS_CODE_TEXT.get(self.status_code, '')
+        return responses.get(self.status_code, '')
 
     def __getstate__(self):
         """
